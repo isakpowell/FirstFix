@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Dulwich Project | FirstFix Interiors</title>
+<link rel="icon" type="image/png" href="../brand_assets/favicon.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700;1,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-variant": "#e2e2e2",
+          "surface-container-low": "#f3f3f3",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#574235",
+          "surface-container-highest": "#e2e2e2",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#5e2b00",
+          "primary-container": "#ff8000",
+          "primary": "#964900",
+          "secondary": "#5e5e5e",
+          "surface-container": "#eeeeee",
+          "surface": "#f9f9f9",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-high": "#e8e8e8",
+          "surface-bright": "#f9f9f9",
+          "background": "#f9f9f9",
+          "outline": "#8b7263",
+          "outline-variant": "#dfc1af",
+          "inverse-surface": "#2f3131",
+          "on-background": "#1a1c1c",
+        },
+        fontFamily: {
+          "headline": ["Plus Jakarta Sans", "sans-serif"],
+          "body": ["Manrope", "sans-serif"],
+          "label": ["Manrope", "sans-serif"],
+          "sans": ["Manrope", "sans-serif"],
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "2xl": "0.75rem",
+          "full": "9999px",
+        },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined' !important;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .before-after-label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+  }
+  .before-after-label.during {
+    background: rgba(150,73,0,0.75);
+  }
+  .before-after-label.after {
+    background: rgba(22,101,52,0.75);
+  }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl" style="box-shadow: 0 1px 0 rgba(0,0,0,0.06);">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-5">
+    <div>
+      <a href="../index.html"><img src="../brand_assets/logo.png" alt="FirstFix Interiors" class="h-8 object-contain"/></a>
+    </div>
+    <div class="hidden md:flex space-x-10 items-center">
+      <a class="font-headline tracking-tight text-sm font-semibold uppercase text-stone-600 hover:text-stone-900 transition-colors duration-200" href="../index.html">Services</a>
+      <a class="font-headline tracking-tight text-sm font-semibold uppercase transition-colors duration-200 pb-1" href="../projects.html" style="color: #964900; border-bottom: 2px solid #964900;">Portfolio</a>
+      <a class="font-headline tracking-tight text-sm font-semibold uppercase text-stone-600 hover:text-stone-900 transition-colors duration-200" href="../about.html">About</a>
+      <a href="../quote.html" class="bg-primary-container text-white px-6 py-2.5 rounded-lg font-headline tracking-tight text-sm font-bold uppercase hover:scale-105 active:scale-95 transition-transform" style="box-shadow: 0 4px 16px rgba(255,128,0,0.25);">
+        Get a Quote
+      </a>
+    </div>
+    <div class="md:hidden">
+      <span class="material-symbols-outlined text-stone-900">menu</span>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-28 pb-24">
+
+  <!-- Breadcrumb -->
+  <div class="max-w-7xl mx-auto px-8 mb-10">
+    <div class="flex items-center gap-2 text-sm text-stone-500">
+      <a href="../projects.html" class="hover:text-primary-container transition-colors font-medium">Portfolio</a>
+      <span class="material-symbols-outlined" style="font-size: 1rem; color: #dfc1af;">chevron_right</span>
+      <span class="text-on-surface font-semibold">The Dulwich Project</span>
+    </div>
+  </div>
+
+  <!-- Project Header -->
+  <section class="max-w-7xl mx-auto px-8 mb-16">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-10">
+      <div class="max-w-3xl">
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-4 py-1.5 rounded-full bg-surface-container text-xs font-bold uppercase tracking-widest text-on-surface-variant">Decorative</span>
+          <span class="px-4 py-1.5 rounded-full bg-surface-container text-xs font-bold uppercase tracking-widest text-on-surface-variant">Residential</span>
+        </div>
+        <h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tighter text-on-surface mb-6 leading-[0.95]">
+          The Dulwich<br/><span class="text-primary italic">Project.</span>
+        </h1>
+        <p class="text-lg text-secondary leading-relaxed max-w-2xl">
+          Repair of a damaged decorative plaster ceiling panel in a residential property — restoring an ornate Victorian-era relief design to a finish indistinguishable from the original.
+        </p>
+      </div>
+
+      <!-- Project Meta -->
+      <div class="flex-shrink-0 bg-surface-container-lowest rounded-2xl p-8 min-w-[220px]" style="box-shadow: 0 4px 24px rgba(0,0,0,0.06);">
+        <div class="space-y-6">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-outline mb-1">Category</p>
+            <p class="font-headline font-semibold text-on-surface">Decorative Plaster</p>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-outline mb-1">Location</p>
+            <p class="font-headline font-semibold text-on-surface">Dulwich, Sydney</p>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-outline mb-1">Type of Work</p>
+            <p class="font-headline font-semibold text-on-surface">Damage Repair &amp; Restoration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Image (After) -->
+  <section class="max-w-7xl mx-auto px-8 mb-16">
+    <div class="relative rounded-2xl overflow-hidden" style="height: 60vh; min-height: 400px;">
+      <img
+        src="dulwich-project/20241030_123159.jpg"
+        alt="Completed decorative plaster ceiling restoration — Dulwich Project"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(10,5,0,0.45) 0%, transparent 50%);"></div>
+      <div class="absolute bottom-8 left-8">
+        <span class="text-white/60 text-xs font-bold uppercase tracking-[0.2em]">Completed Result</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Description -->
+  <section class="max-w-7xl mx-auto px-8 mb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+      <div class="lg:col-span-7">
+        <span class="text-primary-container font-headline font-bold uppercase tracking-[0.2em] text-xs mb-4 block">About This Project</span>
+        <h2 class="text-3xl md:text-4xl font-headline font-extrabold tracking-tighter text-on-surface mb-8 leading-tight">
+          Bringing an ornate ceiling back to life
+        </h2>
+        <div class="space-y-5 text-secondary leading-relaxed" style="font-size: 1.05rem;">
+          <p>
+            This residential property in Dulwich featured a striking decorative plaster ceiling — a Victorian-era design with repeating ornate relief panels, intricate scrollwork and botanical motifs set within a grid of moulded borders. A section of one panel had sustained significant damage, leaving a large hole that cut through the fine detailing.
+          </p>
+          <p>
+            The challenge with work like this lies in the precise matching of relief depth, texture, and profile. Ornate decorative plaster panels each have subtle variations in the way motifs are laid out, and any repair that doesn't account for this reads as obviously patched. Our approach was to carefully rebuild the damaged area in layers, using traditional plaster techniques to recreate the original relief by hand.
+          </p>
+          <p>
+            The result is a seamless restoration — the repaired section sits flush with the surrounding panels, with the pattern flowing continuously across the repair boundary as though the damage never occurred. The finished ceiling is ready to paint, with no visible trace of the original hole.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="bg-surface-container-low rounded-2xl p-8 space-y-6" style="border: 1px solid #dfc1af33;">
+          <h3 class="font-headline font-bold text-on-surface text-lg uppercase tracking-wider">Scope of Work</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container flex-shrink-0 mt-0.5" style="font-size: 1.25rem;">check_circle</span>
+              <span class="text-secondary text-sm leading-relaxed">Assessment of damage extent and pattern matching across surrounding panels</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container flex-shrink-0 mt-0.5" style="font-size: 1.25rem;">check_circle</span>
+              <span class="text-secondary text-sm leading-relaxed">Structural backing and keying of the hole to accept new plaster</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container flex-shrink-0 mt-0.5" style="font-size: 1.25rem;">check_circle</span>
+              <span class="text-secondary text-sm leading-relaxed">Layered plaster build-up to match panel depth and surrounding profile</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container flex-shrink-0 mt-0.5" style="font-size: 1.25rem;">check_circle</span>
+              <span class="text-secondary text-sm leading-relaxed">Hand-tooled relief work to recreate the original Victorian decorative pattern</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary-container flex-shrink-0 mt-0.5" style="font-size: 1.25rem;">check_circle</span>
+              <span class="text-secondary text-sm leading-relaxed">Final finish sanded flush and left paint-ready</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Before / During / After Gallery -->
+  <section class="max-w-7xl mx-auto px-8 mb-24">
+    <div class="mb-10">
+      <span class="text-primary-container font-headline font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Project Gallery</span>
+      <h2 class="text-3xl font-headline font-extrabold tracking-tighter text-on-surface">Before, During &amp; After</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Before -->
+      <div class="relative rounded-xl overflow-hidden group" style="height: 480px;">
+        <img
+          src="dulwich-project/20241030_103148.jpg"
+          alt="Before — hole in decorative plaster ceiling panel"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+        <span class="before-after-label">Before</span>
+        <div class="absolute bottom-6 left-6 right-6">
+          <p class="text-white font-headline font-bold text-lg">Damage Identified</p>
+          <p class="text-white/65 text-sm mt-1">A large hole through the ornate centre of the panel, exposing the void above.</p>
+        </div>
+      </div>
+
+      <!-- During -->
+      <div class="relative rounded-xl overflow-hidden group" style="height: 480px;">
+        <img
+          src="dulwich-project/20241030_115850.jpg"
+          alt="During — plaster repair in progress"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+        <span class="before-after-label during">In Progress</span>
+        <div class="absolute bottom-6 left-6 right-6">
+          <p class="text-white font-headline font-bold text-lg">Repair Underway</p>
+          <p class="text-white/65 text-sm mt-1">Plaster built up in layers and hand-tooled to recreate the original relief detail.</p>
+        </div>
+      </div>
+
+      <!-- After -->
+      <div class="relative rounded-xl overflow-hidden group" style="height: 480px;">
+        <img
+          src="dulwich-project/20241030_123159.jpg"
+          alt="After — seamlessly restored decorative plaster ceiling"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+        <span class="before-after-label after">Completed</span>
+        <div class="absolute bottom-6 left-6 right-6">
+          <p class="text-white font-headline font-bold text-lg">Seamlessly Restored</p>
+          <p class="text-white/65 text-sm mt-1">The pattern flows uninterrupted across the entire ceiling — no visible trace of repair.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Navigation: Back to portfolio + CTA -->
+  <section class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Back to portfolio -->
+      <a href="../projects.html" class="group flex items-center gap-5 bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-8 hover:border-primary-container/40 transition-colors" style="box-shadow: 0 2px 16px rgba(0,0,0,0.04);">
+        <span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors" style="font-size: 2rem;">arrow_back</span>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-outline mb-1">Back to</p>
+          <p class="font-headline font-bold text-on-surface text-lg">All Projects</p>
+        </div>
+      </a>
+
+      <!-- CTA -->
+      <div class="relative overflow-hidden bg-stone-900 rounded-2xl p-8 flex items-center justify-between gap-6">
+        <div class="absolute top-0 right-0 w-1/2 h-full pointer-events-none" style="background: linear-gradient(to bottom left, rgba(255,128,0,0.15), transparent);"></div>
+        <div class="relative z-10">
+          <p class="text-white font-headline font-extrabold text-xl mb-1">Have a similar project?</p>
+          <p class="text-stone-400 text-sm">We handle everything from small repairs to full restorations.</p>
+        </div>
+        <a href="../quote.html" class="relative z-10 flex-shrink-0 inline-flex items-center gap-2 bg-primary-container text-white px-6 py-3 rounded-xl font-headline font-bold text-sm uppercase tracking-wide hover:opacity-90 transition-opacity" style="box-shadow: 0 4px 16px rgba(255,128,0,0.3);">
+          Get a Quote
+          <span class="material-symbols-outlined" style="font-size: 1rem;">arrow_forward</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-stone-100 border-t border-stone-200/15">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+
+    <div class="col-span-1">
+      <img src="../brand_assets/logo.png" alt="FirstFix Interiors" class="h-7 object-contain mb-5"/>
+      <p class="text-stone-500 text-sm leading-relaxed mb-6">Quality decorative plastering across Sydney. Specialists in Federation, heritage, and contemporary work.</p>
+    </div>
+
+    <div>
+      <h4 class="font-headline font-bold text-stone-900 mb-6 uppercase text-xs tracking-widest">Services</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="#">Residential</a></li>
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="#">Heritage Restoration</a></li>
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="#">Complex Mouldings</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-headline font-bold text-stone-900 mb-6 uppercase text-xs tracking-widest">Company</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-primary font-bold" href="../projects.html">Portfolio</a></li>
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="../about.html">About Us</a></li>
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="../quote.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-headline font-bold text-stone-900 mb-6 uppercase text-xs tracking-widest">Legal</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="#">Privacy Policy</a></li>
+        <li><a class="text-stone-500 hover:text-primary-container transition-colors" href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto px-8 mt-16 pt-8" style="border-top: 1px solid rgba(0,0,0,0.06);">
+    <p class="text-stone-400 text-sm text-center">© 2026 FirstFix Interiors. ABN 68 824 674 328.</p>
+  </div>
+</footer>
+
+</body>
+</html>

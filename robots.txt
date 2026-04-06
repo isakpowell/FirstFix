@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://firstfixinteriors.com.au/sitemap.xml
